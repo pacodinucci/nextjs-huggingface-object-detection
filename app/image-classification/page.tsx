@@ -18,7 +18,7 @@ const ImageClassificationPage = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
     setLoading(true);
-    const response = await axios.post("/api/classify-image", formData);
+    const response = await axios.post("/api/detect-objects", formData);
     setLoading(false);
 
     // TODO: set state variables for url and label
